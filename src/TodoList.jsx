@@ -5,7 +5,11 @@ class TodoList extends React.Component {
   render() {
     return (
       <div>
-        
+        {
+          this.props.todos.map((data, index) => {
+            return <TodoItem data={data} remove={() => this.props.removeTodo(index)}/>
+          })
+        }
       </div>
     );
   }
