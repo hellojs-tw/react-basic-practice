@@ -14,5 +14,8 @@ class TodoList extends React.Component {
     );
   }
 }
+TodoList.defaultProps = {
+  todos: [1,2,3,4,5,6]
+}
 
 export default TodoList;
